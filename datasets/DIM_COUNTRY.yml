@@ -1,0 +1,41 @@
+unique_name: DIM_COUNTRY
+object_type: dataset
+label: DIM_COUNTRY
+description: DIM_COUNTRY table
+columns:
+  - name: DIM_COUNTRY_KEY
+    data_type: decimal(38,0)
+  - name: COUNTRY_NAME
+    data_type: string
+  - name: COUNTRY_CODE
+    data_type: string
+  - name: COUNTRY_ISO2_CODE
+    data_type: string
+  - name: COUNTRY_ISO3_CODE
+    data_type: string
+  - name: GEOGRAPHIC_REGION_CODE
+    data_type: string
+  - name: GEOGRAPHIC_REGION_NAME
+    data_type: string
+  - name: MARKET_REGION_CODE
+    data_type: string
+  - name: MARKET_REGION_NAME
+    data_type: string
+  - name: SOURCE_CURRENT_FLAG
+    data_type: boolean
+  - name: SOURCE_SYSTEM_CODE
+    data_type: string
+  - name: ETL_LOAD_KEY
+    data_type: decimal(38,0)
+  - name: HASH_DIFF
+    data_type: string
+  - name: EFFECTIVE_START_DATETIME
+    data_type: datetime
+  - name: EFFECTIVE_END_DATETIME
+    data_type: datetime
+  - name: LAST_UPDATE_USER
+    data_type: string
+  - name: LAST_UPDATE_DATETIME
+    data_type: datetime
+connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
+table: DIM_COUNTRY

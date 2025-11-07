@@ -1,0 +1,6 @@
+version: 1
+unique_name: var-sml-test
+object_type: catalog
+label: var-sml-test
+aggressive_agg_promotion: false
+build_speculative_aggs: true

@@ -1,0 +1,47 @@
+unique_name: FACT_RISK_POSITION
+object_type: dataset
+label: FACT_RISK_POSITION
+description: Position Risk Fields
+columns:
+  - name: FACT_RISK_POSITION_ID
+    data_type: decimal(38,0)
+  - name: DIM_EFFECTIVE_DATE_KEY
+    data_type: decimal(38,0)
+  - name: DIM_PORTFOLIO_KEY
+    data_type: decimal(38,0)
+  - name: DIM_COUNTRY_RISK_KEY
+    data_type: decimal(38,0)
+  - name: DIM_CURRENCY_LOCAL_KEY
+    data_type: decimal(38,0)
+  - name: DIM_CURRENCY_REPORTING_KEY
+    data_type: decimal(38,0)
+  - name: DIM_GICS_SECTOR_KEY
+    data_type: decimal(38,0)
+  - name: LAST_UPDATE_DATETIME
+    data_type: datetime
+  - name: LOAD_DATETIME
+    data_type: datetime
+  - name: MARKET_VALUE_BASE_AMOUNT
+    data_type: decimal(28,12)
+  - name: MARKET_VALUE_LOCAL_AMOUNT
+    data_type: decimal(28,12)
+  - name: PRICE_BASE_AMOUNT
+    data_type: decimal(28,12)
+  - name: PRICE_LOCAL_AMOUNT
+    data_type: decimal(28,12)
+  - name: SHARE_OR_PAR_AMOUNT
+    data_type: decimal(28,12)
+  - name: SOURCE_UPDATE_DATETIME
+    data_type: datetime
+  - name: SOURCE_SYSTEM_CODE
+    data_type: string
+  - name: SOURCE_DELETED_FLAG
+    data_type: boolean
+  - name: ETL_LOAD_KEY
+    data_type: decimal(38,0)
+  - name: LOAD_DETAIL_DESCRIPTION
+    data_type: string
+  - name: LAST_UPDATE_USER
+    data_type: string
+connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
+table: FACT_RISK_POSITION

@@ -1,0 +1,23 @@
+unique_name: risk_reporting
+object_type: model
+label: risk_reporting
+metrics:
+  - unique_name: MarketValue_Local
+relationships:
+  - unique_name: FACT_RISK_POSITION_DIM_COUNTRY_RISK_KEY_to_Country_Country
+    from:
+      dataset: FACT_RISK_POSITION
+      join_columns:
+        - DIM_COUNTRY_RISK_KEY
+    to:
+      dimension: Country
+      level: Country
+  - unique_name: FACT_RISK_POSITION_DIM_CURRENCY_LOCAL_KEY_to_Currency_Currency
+    from:
+      dataset: FACT_RISK_POSITION
+      join_columns:
+        - DIM_CURRENCY_LOCAL_KEY
+    role_play: Local {0}
+    to:
+      dimension: Currency
+      level: Currency

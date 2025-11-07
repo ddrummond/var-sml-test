@@ -1,0 +1,9 @@
+unique_name: MarketValue_Local
+object_type: metric
+label: MarketValue_Local
+description: Market Value in the Local Currency
+calculation_method: sum
+column: MARKET_VALUE_LOCAL_AMOUNT
+dataset: FACT_RISK_POSITION
+format: standard
+unrelated_dimensions_handling: repeat

@@ -1,0 +1,31 @@
+unique_name: DIM_CURRENCY
+object_type: dataset
+label: DIM_CURRENCY
+description: Currency Table
+columns:
+  - name: DIM_CURRENCY_KEY
+    data_type: decimal(38,0)
+  - name: CURRENCY_CODE
+    data_type: string
+  - name: CURRENCY_NAME
+    data_type: string
+  - name: CURRENCY_LONG_NAME
+    data_type: string
+  - name: COUNTRY_ISO3_CODE
+    data_type: string
+  - name: SOURCE_CURRENT_FLAG
+    data_type: boolean
+  - name: SOURCE_SYSTEM_CODE
+    data_type: string
+  - name: ETL_LOAD_KEY
+    data_type: decimal(38,0)
+  - name: HASH_DIFF
+    data_type: string
+  - name: CREATE_DATETIME
+    data_type: datetime
+  - name: LAST_UPDATE_USER
+    data_type: string
+  - name: LAST_UPDATE_DATETIME
+    data_type: datetime
+connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
+table: DIM_CURRENCY

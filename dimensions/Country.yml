@@ -1,0 +1,28 @@
+unique_name: Country
+object_type: dimension
+label: Country
+description: Country Dimension
+hierarchies:
+  - unique_name: GeographicRegion_Hier
+    label: GeographicRegion_Hier
+    levels:
+      - unique_name: Country
+        secondary_attributes:
+          - unique_name: Country_ISO2_Code
+            label: Country_ISO2_Code
+            contains_unique_names: false
+            dataset: DIM_COUNTRY
+            is_unique_key: false
+            key_columns:
+              - COUNTRY_ISO2_CODE
+            name_column: COUNTRY_ISO2_CODE
+level_attributes:
+  - unique_name: Country
+    label: Country
+    contains_unique_names: false
+    dataset: DIM_COUNTRY
+    is_unique_key: true
+    key_columns:
+      - DIM_COUNTRY_KEY
+    name_column: COUNTRY_NAME
+type: standard
