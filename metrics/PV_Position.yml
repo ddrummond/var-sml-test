@@ -1,0 +1,7 @@
+unique_name: PV_Position
+object_type: metric
+label: PV_Position
+description: Position PV
+calculation_method: sum
+column: PV
+dataset: HOLDING_SECURITY_PV

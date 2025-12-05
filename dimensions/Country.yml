@@ -23,6 +23,6 @@ level_attributes:
     dataset: DIM_COUNTRY
     is_unique_key: true
     key_columns:
-      - DIM_COUNTRY_KEY
+      - COUNTRY_ISO2_CODE
     name_column: COUNTRY_NAME
 type: standard

@@ -1,0 +1,326 @@
+unique_name: PUBLIC_PRIVATE_POSITIONS_REPORT
+object_type: dataset
+label: PUBLIC_PRIVATE_POSITIONS_REPORT
+columns:
+  - name: DIM_DATE_KEY
+    data_type: decimal(38,0)
+  - name: DIM_GICS_SECTOR_KEY
+    data_type: decimal(38,0)
+  - name: ASOFDATE
+    data_type: date
+  - name: PRICINGDATE
+    data_type: string
+  - name: ANALYSISDATE
+    data_type: date
+  - name: CLIENT
+    data_type: string
+  - name: PORTFOLIOPARAMETER
+    data_type: string
+  - name: IPS_STRATEGY
+    data_type: string
+  - name: PRIVATE_MKT_PARTNER
+    data_type: string
+  - name: IMCO_MANAGER
+    data_type: string
+  - name: IMCO_PORTFOLIOID
+    data_type: string
+  - name: IMCO_FUND
+    data_type: string
+  - name: LEVEL_1
+    data_type: string
+  - name: PRIVATE_MKT_FUND_NAME
+    data_type: string
+  - name: IMCO_ASSET
+    data_type: string
+  - name: NAME
+    data_type: string
+  - name: PRIVATE_MKT_ASSET_NAME
+    data_type: string
+  - name: POSITIONTYPE
+    data_type: string
+  - name: MSCI_UNIQUEID
+    data_type: string
+  - name: ISIN
+    data_type: string
+  - name: SEDOL
+    data_type: string
+  - name: CUSIP
+    data_type: string
+  - name: RMG_SECURITYDESCRIPTION
+    data_type: string
+  - name: PV
+    data_type: decimal(38,12)
+  - name: DAE
+    data_type: decimal(38,12)
+  - name: DV01
+    data_type: decimal(38,12)
+  - name: CV01
+    data_type: decimal(38,12)
+  - name: MODIFIED_DURATION
+    data_type: string
+  - name: INCREMENTAL_STD_DEV_BOOTSTRAP
+    data_type: string
+  - name: INCREMENTAL_STD_DEV_BOOTSTRAP_IMC
+    data_type: decimal(38,12)
+  - name: STD_DEV_BOOTSTRAP
+    data_type: string
+  - name: STD_DEV_BOOTSTRAP_IMC
+    data_type: decimal(38,12)
+  - name: VAR_95_BOOTSTRAP_IMC
+    data_type: decimal(38,12)
+  - name: IVAR_BOOTSTRAP_IMC_95
+    data_type: decimal(38,12)
+  - name: AMOUNT
+    data_type: decimal(38,12)
+  - name: ASSETPRICE
+    data_type: decimal(38,12)
+  - name: EXTRADETAILUNDERLYINGPRICE
+    data_type: string
+  - name: NOTIONAL_REPORTING_CURRENCY
+    data_type: decimal(38,12)
+  - name: DIVIDEND_YIELD
+    data_type: string
+  - name: TIME_TO_MATURITY
+    data_type: string
+  - name: WEIGHTED_AVERAGE_LIFE
+    data_type: string
+  - name: ISSUER_OAS
+    data_type: string
+  - name: IDIOSYNCRATIC_OAS
+    data_type: string
+  - name: CREDIT_SPREAD
+    data_type: string
+  - name: YTM
+    data_type: string
+  - name: YIELD_TO_NEXT
+    data_type: string
+  - name: YTW
+    data_type: string
+  - name: EFFECTIVE_DURATION
+    data_type: decimal(38,12)
+  - name: MACAULAY_DURATION
+    data_type: string
+  - name: EFFECTIVE_SPREAD_DURATION
+    data_type: string
+  - name: EFFECTIVE_SPREAD_CONVEXITY
+    data_type: string
+  - name: CLEANPRICEINLOCALCURRENCYASPERCENTOFNOTIONAL
+    data_type: string
+  - name: DIRTYPRICEINLOCALCURRENCYASPERCENTOFNOTIONAL
+    data_type: string
+  - name: ISINFLATIONINDEXED
+    data_type: string
+  - name: DISCRETE_REAL_YIELD
+    data_type: string
+  - name: MATURITYDATE
+    data_type: date
+  - name: IMCO_ULTIMATEISSUER
+    data_type: string
+  - name: ISSUERNAME
+    data_type: string
+  - name: PARENTISSUERNAME
+    data_type: string
+  - name: ULTIMATEPARENTISSUERNAME
+    data_type: string
+  - name: UNDERLYINGNAME
+    data_type: string
+  - name: IMCO_COUNTRY_1
+    data_type: string
+  - name: IMCO_CURRENCY
+    data_type: string
+  - name: ULTIMATECOUNTRYOFRISK
+    data_type: string
+  - name: COUNTRY
+    data_type: string
+  - name: ISSUERCOUNTRYOFDOMICILE
+    data_type: string
+  - name: ISO_COUNTRY_SYMBOL
+    data_type: string
+  - name: ICCCOUNTRYOFQEXPOSURE
+    data_type: string
+  - name: CURRENCY
+    data_type: string
+  - name: COUNTRY_RISK
+    data_type: string
+  - name: CURRENCY_FUND
+    data_type: string
+  - name: CURRENCY_RISK
+    data_type: string
+  - name: SETTLECURRENCY
+    data_type: string
+  - name: FORWARDCURRENCY
+    data_type: string
+  - name: GICSSECTOR
+    data_type: string
+  - name: GICSINDUSTRY
+    data_type: string
+  - name: GICSINDUSTRYGROUP
+    data_type: string
+  - name: GICSSUBINDUSTRY
+    data_type: string
+  - name: IMCO_SECTOR_1
+    data_type: string
+  - name: INDUSTRYSECTOR
+    data_type: string
+  - name: COMPOSITESECTOR
+    data_type: string
+  - name: COMPOSITESUBSECTOR
+    data_type: string
+  - name: IMCO_RATING
+    data_type: string
+  - name: IMCO_RATING_GROUP
+    data_type: string
+  - name: MOODYLOANRATING
+    data_type: string
+  - name: SPLOANRATING
+    data_type: string
+  - name: RATINGSP
+    data_type: string
+  - name: RATINGMOODYS
+    data_type: string
+  - name: IMCO_MANAGER_MANDATE_CURR
+    data_type: string
+  - name: IMCO_MANAGER_MANDATE_TYPE
+    data_type: string
+  - name: IMCO_MANAGER_TYPE
+    data_type: string
+  - name: IMCO_MGR_FUND
+    data_type: string
+  - name: IMCO_MGR_FUND_TYPE
+    data_type: string
+  - name: PRIVATE_MKT_ASSET_TYPE
+    data_type: string
+  - name: PRIVATE_MKT_COUNTRY
+    data_type: string
+  - name: PRIVATE_MKT_CURRENCY
+    data_type: string
+  - name: PRIVATE_MKT_FUND
+    data_type: string
+  - name: PRIVATE_MKT_INVESTMENT_VEHICLE
+    data_type: string
+  - name: PRIVATE_MKT_LEVERAGE
+    data_type: decimal(38,12)
+  - name: PRIVATE_MKT_REGION
+    data_type: string
+  - name: PRIVATE_MKT_REVENUE_SOURCE
+    data_type: string
+  - name: PRIVATE_MKT_RISK_STRATEGY
+    data_type: string
+  - name: PRIVATE_MKT_SECTOR
+    data_type: string
+  - name: EXPOSURE_SCALAR
+    data_type: string
+  - name: INCOME_RISK_EXPOSURE_SCALAR
+    data_type: string
+  - name: LEVERAGE
+    data_type: string
+  - name: METRO_AREA
+    data_type: string
+  - name: PE_COMMON_FACTOR_RISK_SCALAR
+    data_type: string
+  - name: PE_INVESTMENT_TYPE
+    data_type: string
+  - name: PE_PUBLIC_PROXY
+    data_type: string
+  - name: PROPERTY_SUBTYPE
+    data_type: string
+  - name: PROPERTY_TYPE_AND_REGION
+    data_type: string
+  - name: PROXY_IDENTIFIER
+    data_type: string
+  - name: REGION
+    data_type: string
+  - name: RISK_STRATEGY
+    data_type: string
+  - name: SECTOR_1
+    data_type: string
+  - name: SPECIFIC_RISK_SCALAR
+    data_type: string
+  - name: IMCO_PRODUCT
+    data_type: string
+  - name: DERIVATIVE
+    data_type: string
+  - name: ASSET_CLASS
+    data_type: string
+  - name: ASSET_NAME
+    data_type: string
+  - name: ASSET_TYPE
+    data_type: string
+  - name: ASSETCLASS
+    data_type: string
+  - name: DP_ASSETTYPE
+    data_type: string
+  - name: INSTRUMENT_TYPE
+    data_type: string
+  - name: ASSETTYPE
+    data_type: string
+  - name: IMCO_RELATIVEVAR_INST
+    data_type: string
+  - name: RMG_POSITIONISPROXIED
+    data_type: string
+  - name: RMG_POSITIONSTATUS
+    data_type: string
+  - name: EXCHANGE
+    data_type: string
+  - name: IMCO_MANAGER_1
+    data_type: string
+  - name: SECURITYUPDATETIMESTAMP
+    data_type: datetime
+  - name: LOADINGSTATUS
+    data_type: string
+  - name: ETSECURITYIDENTIFIER
+    data_type: string
+  - name: MARKETCAPCATEGORY
+    data_type: string
+  - name: ISSUERTICKER
+    data_type: string
+  - name: MARKETCAPITALIZATIONUSD
+    data_type: decimal(38,12)
+  - name: SHARESOUTSTANDING
+    data_type: decimal(38,12)
+  - name: IMCO_REGION_CUBE
+    data_type: string
+  - name: IMCO_SECTOR_CUBE
+    data_type: string
+  - name: IMCO_COUNTRY_CUBE
+    data_type: string
+  - name: SECURITY_ALIAS
+    data_type: string
+  - name: IMCO_ASSETTYPE
+    data_type: string
+  - name: IMCO_REGION_CUBE_GC
+    data_type: string
+  - name: IMCO_SECTOR_CUBE_GC
+    data_type: string
+  - name: IMCO_ASSET_TYPE_GC
+    data_type: string
+  - name: IMCO_INTERNAL_EXTERNAL_CUBE
+    data_type: string
+  - name: IMCO_PUBLIC_PRIVATE_CUBE
+    data_type: string
+  - name: ALLFXCCY
+    data_type: string
+  - name: PRIVATE_MKT_FIELD15
+    data_type: string
+  - name: PRIVATE_MKT_FIELD16
+    data_type: string
+  - name: SUB_REPORT_NAME
+    data_type: string
+  - name: SEPARATE_GROUP
+    data_type: string
+  - name: CLIENT_ID
+    data_type: string
+  - name: MACRO_GRID_RISING_GROWTH_CUBE
+    data_type: string
+  - name: MACRO_GRID_FALLING_GROWTH_CUBE
+    data_type: string
+  - name: MACRO_GRID_RISING_INFLATION_CUBE
+    data_type: string
+  - name: MACRO_GRID_FALLING_INFLATION_CUBE
+    data_type: string
+  - name: IMCO_SECTOR_AI_CUBE
+    data_type: string
+  - name: PRIVATE_MKT_HAIRCUT
+    data_type: string
+connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
+table: FACT_RISK_PUBLIC_PRIVATE_POSITIONS_REPORT

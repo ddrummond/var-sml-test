@@ -1,0 +1,23 @@
+unique_name: Security_Name
+object_type: dimension
+label: Security Name
+hierarchies:
+  - unique_name: Security_Name_H
+    label: Security_Name_H
+    levels:
+      - unique_name: Security_Name_L
+is_degenerate: true
+level_attributes:
+  - unique_name: Security_Name_L
+    label: Security_Name_L
+    contains_unique_names: false
+    shared_degenerate_columns:
+      - dataset: POSITION_PNL_SECURITY
+        key_columns:
+          - SECURITY_NAME
+        name_column: SECURITY_NAME
+      - dataset: HOLDING_SECURITY_PV
+        key_columns:
+          - SECURITY
+        name_column: SECURITY
+type: standard

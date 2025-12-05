@@ -1,0 +1,17 @@
+unique_name: POSITION_PNL_SECURITY
+object_type: dataset
+label: POSITION_PNL_SECURITY
+description: Vectors are unpivoted, so there are about 20,000 rows per Security Name
+columns:
+  - name: SECURITY_NAME
+    data_type: string
+  - name: PV
+    data_type: decimal(28,12)
+  - name: SCENARIO
+    data_type: decimal(38,0)
+  - name: PNL_VECTOR_VALUE
+    data_type: decimal(36,12)
+  - name: PNL_VECTOR_PERCENTAGE_VALUE
+    data_type: decimal(36,12)
+connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
+table: FACT_RISK_POSITION_PNL_SECURITY_UNPIVOT

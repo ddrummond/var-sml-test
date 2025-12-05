@@ -1,0 +1,23 @@
+unique_name: Holding_Name
+object_type: dimension
+label: Holding Name
+hierarchies:
+  - unique_name: HoldingName_H
+    label: HoldingName_H
+    levels:
+      - unique_name: HoldingName_L
+is_degenerate: true
+level_attributes:
+  - unique_name: HoldingName_L
+    label: HoldingName_L
+    contains_unique_names: false
+    shared_degenerate_columns:
+      - dataset: HOLDING_SECURITY_PV
+        key_columns:
+          - HOLDINGNAME
+        name_column: HOLDINGNAME
+      - dataset: PUBLIC_PRIVATE_POSITIONS_REPORT
+        key_columns:
+          - NAME
+        name_column: NAME
+type: standard

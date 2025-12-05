@@ -1,0 +1,18 @@
+unique_name: Imco_Portfolio_ID
+object_type: dimension
+label: Imco Portfolio ID
+hierarchies:
+  - unique_name: Imco_Portfolio_ID_Hierarchy
+    label: Imco Portfolio ID Hierarchy
+    levels:
+      - unique_name: Imco_Portfolio_ID_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Imco_Portfolio_ID_Level
+    label: Imco Portfolio ID Level
+    contains_unique_names: false
+    dataset: PUBLIC_PRIVATE_POSITIONS_REPORT
+    key_columns:
+      - IMCO_PORTFOLIOID
+    name_column: IMCO_PORTFOLIOID
+type: standard

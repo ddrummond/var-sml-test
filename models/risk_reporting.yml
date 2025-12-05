@@ -1,23 +1,26 @@
 unique_name: risk_reporting
 object_type: model
 label: risk_reporting
+dimensions:
+  - Imco_Portfolio_ID
+  - Holding_Name
+  - Security_Name
 metrics:
-  - unique_name: MarketValue_Local
+  - unique_name: PV_Position
 relationships:
-  - unique_name: FACT_RISK_POSITION_DIM_COUNTRY_RISK_KEY_to_Country_Country
+  - unique_name: PUBLIC_PRIVATE_POSITIONS_REPORT_ISO_COUNTRY_SYMBOL_to_Country_Country
     from:
-      dataset: FACT_RISK_POSITION
+      dataset: PUBLIC_PRIVATE_POSITIONS_REPORT
       join_columns:
-        - DIM_COUNTRY_RISK_KEY
+        - ISO_COUNTRY_SYMBOL
     to:
       dimension: Country
       level: Country
-  - unique_name: FACT_RISK_POSITION_DIM_CURRENCY_LOCAL_KEY_to_Currency_Currency
+  - unique_name: PUBLIC_PRIVATE_POSITIONS_REPORT_IMCO_CURRENCY_to_Currency_Currency
     from:
-      dataset: FACT_RISK_POSITION
+      dataset: PUBLIC_PRIVATE_POSITIONS_REPORT
       join_columns:
-        - DIM_CURRENCY_LOCAL_KEY
-    role_play: Local {0}
+        - IMCO_CURRENCY
     to:
       dimension: Currency
       level: Currency

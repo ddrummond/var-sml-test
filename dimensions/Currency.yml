@@ -13,7 +13,7 @@ level_attributes:
     dataset: DIM_CURRENCY
     is_unique_key: false
     key_columns:
-      - DIM_CURRENCY_KEY
-    name_column: CURRENCY_CODE
+      - CURRENCY_CODE
+    name_column: CURRENCY_NAME
     sort_column: CURRENCY_CODE
 type: standard

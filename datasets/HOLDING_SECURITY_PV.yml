@@ -1,0 +1,14 @@
+unique_name: HOLDING_SECURITY_PV
+object_type: dataset
+label: HOLDING_SECURITY_PV
+columns:
+  - name: PORTFOLIO
+    data_type: string
+  - name: HOLDINGNAME
+    data_type: string
+  - name: SECURITY
+    data_type: string
+  - name: PV
+    data_type: decimal(38,9)
+connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
+table: FACT_RISK_HOLDING_SECURITY_PV
