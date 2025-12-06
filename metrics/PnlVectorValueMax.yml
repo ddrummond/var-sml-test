@@ -1,0 +1,7 @@
+unique_name: PnlVectorValueMax
+object_type: metric
+label: PnlVectorValueMax
+calculation_method: maximum
+column: PNL_VECTOR_VALUE_DOUBLE
+dataset: POSITION_PNL_SECURITY
+unrelated_dimensions_handling: repeat

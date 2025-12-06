@@ -1,0 +1,5 @@
+unique_name: ExpectedShortfall
+object_type: metric_calc
+label: ExpectedShortfall
+expression: >-
+  Avg(DESCENDANTS([Security_Scenario].[Security_Scenario_H].CurrentMember, [Security_Scenario].[Security_Scenario_H].[SECURITY_NAME].[Security_Scenario_L], SELF), [Measures].[PNL_VALUE_LT_Var95])

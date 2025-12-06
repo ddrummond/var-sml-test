@@ -5,12 +5,19 @@ dimensions:
   - Imco_Portfolio_ID
   - Holding_Name
   - Security_Name
+  - Portfolio
+  - Security_Scenario
 metrics:
   - unique_name: PV_Position
   - unique_name: PNL_VALUE_STDEV
-  - unique_name: VaR_95
+  - unique_name: VaR95
   - unique_name: MarketCapitalizationUSD
   - unique_name: SharesOutstanding
+  - unique_name: PnlVectorValueMax
+  - unique_name: VAR95_SECURITY
+  - unique_name: PNL_VALUE_LT_Var95
+  - unique_name: ExpectedShortfall
+
 relationships:
   - unique_name: PUBLIC_PRIVATE_POSITIONS_REPORT_ISO_COUNTRY_SYMBOL_to_Country_Country
     from:

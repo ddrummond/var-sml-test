@@ -1,0 +1,18 @@
+unique_name: Portfolio
+object_type: dimension
+label: Portfolio
+hierarchies:
+  - unique_name: Portfolio_Hierarchy
+    label: Portfolio Hierarchy
+    levels:
+      - unique_name: Portfolio_Level
+is_degenerate: true
+level_attributes:
+  - unique_name: Portfolio_Level
+    label: Portfolio Level
+    contains_unique_names: false
+    dataset: HOLDING_SECURITY_PV
+    key_columns:
+      - PORTFOLIO
+    name_column: PORTFOLIO
+type: standard

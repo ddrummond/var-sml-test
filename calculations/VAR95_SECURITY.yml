@@ -1,0 +1,8 @@
+unique_name: VAR95_SECURITY
+object_type: metric_calc
+label: VAR95_SECURITY
+description: Returns the .05 scenario percentile at the Security level.
+expression: >-
+  IIF([Security_Scenario].[Security_Scenario_H].currentMember.LEVEL_NUMBER <= 1,
+  NULL, ([Measures].[VaR95_instance_0.05],
+  [Security_Scenario].[Security_Scenario_H].currentMember.parent))

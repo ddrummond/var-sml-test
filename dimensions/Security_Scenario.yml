@@ -1,0 +1,27 @@
+unique_name: Security_Scenario
+object_type: dimension
+label: Security_Scenario
+hierarchies:
+  - unique_name: Security_Scenario_H
+    label: Security_Scenario_H
+    levels:
+      - unique_name: SECURITY_NAME
+      - unique_name: Security_Scenario_L
+is_degenerate: true
+level_attributes:
+  - unique_name: Security_Scenario_L
+    label: Security_Scenario_L
+    contains_unique_names: true
+    dataset: POSITION_PNL_SECURITY
+    is_unique_key: true
+    key_columns:
+      - SECURITY_SCENARIO
+    name_column: SECURITY_SCENARIO
+  - unique_name: SECURITY_NAME
+    label: SECURITY_NAME
+    contains_unique_names: false
+    dataset: POSITION_PNL_SECURITY
+    key_columns:
+      - SECURITY_NAME
+    name_column: SECURITY_NAME
+type: standard

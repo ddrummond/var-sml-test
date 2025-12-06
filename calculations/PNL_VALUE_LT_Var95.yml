@@ -1,0 +1,7 @@
+unique_name: PNL_VALUE_LT_Var95
+object_type: metric_calc
+label: PNL_VALUE_LT_Var95
+description: >-
+  When evaluated at the Security_Scenario Level returns the PNL Vector Value if
+  it is less than the VaR_95 value, else None
+expression: IIF([Measures].[PnlVectorValueMax] < [Measures].[VAR95_SECURITY], [Measures].[PnlVectorValueMax], NULL)

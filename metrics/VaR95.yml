@@ -1,6 +1,6 @@
-unique_name: VaR_95
+unique_name: VaR95
 object_type: metric
-label: VaR_95
+label: VaR95
 description: Value-at-Risk 95% (95th Percentile)
 calculation_method: percentile
 column: PNL_VECTOR_VALUE
