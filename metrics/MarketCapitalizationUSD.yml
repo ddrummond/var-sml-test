@@ -1,0 +1,7 @@
+unique_name: MarketCapitalizationUSD
+object_type: metric
+label: Market Capitalization  USD
+calculation_method: sum
+column: MARKETCAPITALIZATIONUSD
+dataset: PUBLIC_PRIVATE_POSITIONS_REPORT
+unrelated_dimensions_handling: repeat

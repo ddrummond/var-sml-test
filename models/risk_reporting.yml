@@ -7,6 +7,10 @@ dimensions:
   - Security_Name
 metrics:
   - unique_name: PV_Position
+  - unique_name: PNL_VALUE_STDEV
+  - unique_name: VaR_95
+  - unique_name: MarketCapitalizationUSD
+  - unique_name: SharesOutstanding
 relationships:
   - unique_name: PUBLIC_PRIVATE_POSITIONS_REPORT_ISO_COUNTRY_SYMBOL_to_Country_Country
     from:

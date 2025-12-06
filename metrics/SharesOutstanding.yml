@@ -1,0 +1,7 @@
+unique_name: SharesOutstanding
+object_type: metric
+label: Shares Outstanding
+calculation_method: sum
+column: SHARESOUTSTANDING
+dataset: PUBLIC_PRIVATE_POSITIONS_REPORT
+unrelated_dimensions_handling: repeat

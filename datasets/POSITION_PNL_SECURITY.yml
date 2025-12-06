@@ -13,5 +13,8 @@ columns:
     data_type: decimal(36,12)
   - name: PNL_VECTOR_PERCENTAGE_VALUE
     data_type: decimal(36,12)
+  - name: PNL_VECTOR_VALUE_DOUBLE
+    data_type: double
+    sql: TO_DOUBLE(PNL_VECTOR_VALUE)
 connection_id: con_LISTING_IMCO_RISK_REPORTING_NONPROD_IMCO_RISK_REPORTING_POC
 table: FACT_RISK_POSITION_PNL_SECURITY_UNPIVOT

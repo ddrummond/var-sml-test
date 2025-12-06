@@ -3,5 +3,6 @@ object_type: metric
 label: PNL_VALUE_STDEV
 description: Sample Standard Deviation of the PNL_VECTOR_VALUE column
 calculation_method: stddev_samp
-column: PNL_VECTOR_VALUE
+column: PNL_VECTOR_VALUE_DOUBLE
 dataset: POSITION_PNL_SECURITY
+unrelated_dimensions_handling: repeat

@@ -1,0 +1,11 @@
+unique_name: VaR_95
+object_type: metric
+label: VaR_95
+description: Value-at-Risk 95% (95th Percentile)
+calculation_method: percentile
+column: PNL_VECTOR_VALUE
+compression: 50
+custom_quantiles:
+  - 0.05
+dataset: POSITION_PNL_SECURITY
+unrelated_dimensions_handling: repeat

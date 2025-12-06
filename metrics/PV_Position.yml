@@ -5,3 +5,4 @@ description: Position PV
 calculation_method: sum
 column: PV
 dataset: HOLDING_SECURITY_PV
+unrelated_dimensions_handling: repeat
